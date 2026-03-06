@@ -1,0 +1,154 @@
+[2026-03-03 09:10:51] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Started | Message: [PL_Brz_***_Lander] started at 2026-03-03 09:10:01
+
+Workspace Name: [***_Prd]
+Pipeline Name: [PL_Brz_***_Lander]
+Pipeline Run ID: [***-***-***-***-***]
+Pipeline Trigger ID: [***]
+Pipeline Trigger Origin ID: [***]
+Pipeline Trigger Tracking ID: [***-***-***-***-***]
+Pipeline Trigger Time: [(2026-03-03 09:10:01)]
+Pipeline Trigger Type: [Scheduled]
+Pipeline Trigger By: [Scheduling Module]
+Pipeline Trigger Status: [Succeeded]
+
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-03 09:13:01] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Success | Message: *** Landing job started based on the pipeline [schedule time] and configuration defined in the [***_***_schedule_map] dictionary table, with the following details:
+
+Trigger Type: Scheduled
+Schedule Type: Minutely
+Schedule Time: 09:10
+Land Plan: No landing plan selected during this run
+Logging Mode: 1
+Landing Mode: 2
+Update Metadata: True
+
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-03 09:14:04] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Started | Message: [NB_Brz_***_Utility] execution started.
+[2026-03-03 09:14:34] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Received the following land plan, servers, and tables from the pipeline input (manual runs) or [***_***_schedule_map] dictionary table (scheduled runs):
+
+Land Plan (raw input): [No land plan input during this run]
+Servers (raw input): [No server input during this run]
+Tables (raw input): [No table input during this run]
+
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-03 09:14:40] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Successfully loaded final_enabled_servers_list (45 servers):
+
+[***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX),***-***(XXX)]
+
+========================================================================================================================================================================================================
+[2026-03-03 09:14:44] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Successfully loaded final_enabled_tables_list (5 tables):
+
+[***,***,***,***,***]
+
+========================================================================================================================================================================================================
+[2026-03-03 09:14:48] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Excluded tables per server:
+
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+***-***(XXX): [No exclude table found for this server]
+
+========================================================================================================================================================================================================
+[2026-03-03 09:14:53] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Final tables per server (after exclusions):
+
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+***-***(XXX): [***,***,***,***,***]
+
+========================================================================================================================================================================================================
+[2026-03-03 09:15:00] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Success | Message: Saving output for schedule type 'M'.
+
+JSON results written to:
+â€¢ Folder: Runtime_Outputs/PL_Brz_***_Lander/2026-03-03
+â€¢ File: ***_Utility_Results_M_2026-03-03_09-14-59.json
+â€¢ Full Path: abfss://***_Prd@onelake.dfs.fabric.microsoft.com/LH_Brz_***.Lakehouse/Files/Runtime_Outputs/PL_Brz_***_Lander/2026-03-03/***_Utility_Results_M_2026-03-03_09-14-59.json
+
+Returned pipeline output contains:
+â€¢ Pure server list count: 45
+â€¢ Pure table list count: 5
+â€¢ Server objects count: 45
+â€¢ Table objects count: 5
+â€¢ Flattened serverâ€“table list count: 225
+
+Full results will be loaded from the saved JSON file in the next pipeline step if needed.
+[2026-03-03 09:15:01] [INFO] [***_Prd] Stage: NB_Brz_***_Utility | Status: Completed | Message: [NB_Brz_***_Utility] execution completed successfully.
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-03 09:17:23] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-03 09:17:23] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-03 09:17:27] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_230], Proceeding to update metadata using mode [3].
+[2026-03-03 09:17:28] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***TOCK_37], Proceeding to update metadata using mode [3].
+========================================================================================================================================================================================================
+[2026-03-03 09:17:33] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-03 09:17:39] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***_XXX], Proceeding to update metadata using mode [3].
+========================================================================================================================================================================================================
+[2026-03-03 09:21:14] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 2/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.Z_LATEST_LANDED_DT], waiting 3s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772491853845,"operation":"UPDATE","operatio***arameters":{"predicate":["((((workspace_name#16983 = ***_Prd) AND (lakehouse_name#16984 = LH_Brz_***)) AND (source_system#16985 = Z)) AND ((table_name#16986 = ***) AND (pipeline_name#16989 = PL_Brz_***_Lander)))"]},"readVersion":18460,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"6021","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"2780","numDeletionVectorsUpdated":"0","scanTimeMs":"2241","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6021","rewriteTimeMs":"539"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"***-***-***-***-***"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+[2026-03-03 09:21:17] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 1/30] Concurrent update/protocol change detected for [SCRIPTTAGSCRIPTS_230] into [LH_Brz_***.Z_LATEST_LANDED_DT], waiting 1s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772491853845,"operation":"UPDATE","operatio***arameters":{"predicate":["((((workspace_name#16983 = ***_Prd) AND (lakehouse_name#16984 = LH_Brz_***)) AND (source_system#16985 = Z)) AND ((table_name#16986 = ***) AND (pipeline_name#16989 = PL_Brz_***_Lander)))"]},"readVersion":18460,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"6021","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"2780","numDeletionVectorsUpdated":"0","scanTimeMs":"2241","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6021","rewriteTimeMs":"539"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"***-***-***-***-***"}
+========================================================================================================================================================================================================
+[2026-03-03 09:21:27] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+========================================================================================================================================================================================================
+[2026-03-03 09:21:30] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_368], Proceeding to update metadata using mode [3].
+[2026-03-03 09:21:30] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-03 09:21:33] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_368], Proceeding to update metadata using mode [3].
+[2026-03-03 09:21:45] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-03 09:11:39] for [***_69] into [LH_Brz_***.Z_LATEST_LANDED_DT] with status = [Synced] and mode = [3].
+[2026-03-03 09:21:50] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-03 10:38:07] [ERROR] [***_Prd] Stage: Copy_One_***_Table_With_DBA_Fields | Status: Failed | Message: Activity [Loop_All_Tables_Use_Smart_Copy_Activity] has failed because Activity failed because an inner activity failed; Inner activity name: Copy_One_***_Table_With_DBA_Fields, Error: ErrorCode=FailedToUpsertDataIntoDeltaTable,'Type=Microsoft.DataTransfer.Common.Shared.HybridDeliveryException,Message=Hit an error when upsert data to table in Lakehouse. Error message: Exception of type 'Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteException' was thrown.,Source=Microsoft.DataTransfer.Connectors.LakehouseTableConnector,''Type=Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteException,Message=Exception of type 'Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteException' was thrown.,Source=Microsoft.Data.DeltaLake,' 
+********************************************************************************************************************************************************************************************************
+[2026-03-03 10:39:38] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Success | Message: System run log successfully updated in System_Run_Log table with the following fields:
+
+Run ID: [***-***-***-***-***]
+Workspace Name: [***_Prd]
+Object Type: [Pipeline]
+Object Name: [PL_Brz_***_Lander]
+Object Subtype: [Lakehouse Lander]
+Start Time: [(2026-03-03 09:10:01)]
+End Time: [(2026-03-03 10:39:57)]
+Duration: [01:29:56]
+Status: [Failed]
+Result Message: [Activity failed because an inner activity failed; Inner activity name: Copy_One_***ores_Table_With_DBA_Fields, Error: ErrorCode=FailedToUpsertDataIntoDeltaTable,''Type=Microsoft.DataTransfer.Common.Shared.HybridDeliveryError,Message=Hit an error when upsert data to table in Lakehouse. Error message: Error of type ''Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteError'' was thrown.,Source=Microsoft.DataTransfer.Connectors.LakehouseTableConnector,''''Type=Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteError,Message=Error of type ''Microsoft.Data.DeltaLake.ConcurrentDeleteDeleteError'' was thrown.,Source=Microsoft.Data.DeltaLake,'']
+Trigger Type: [Scheduled]
+Triggered By: [Scheduling Module]
+Log Date: [(2026-03-03 10:38:57)]
+Log Day: [2026-03-03]
+Additional Metadata: [map()]
+Tags: [array('pipeline', 'failed')]
+Description: []
+
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-03 10:39:45] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Failed | Message: [PL_Brz_***_Lander] failed with an error at 2026-03-03 10:39:57
+========================================================================================================================================================================================================
+[2026-03-03 10:39:47] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Success | Message: Extracting log data for email dispatch.
+[2026-03-03 10:41:53] [INFO] [NP_Prd] Stage: Sending_Email | Status: Success | Message: Extract Email Configuration:
+
+Workspace: ***_Prd
+Module: PL_Brz_***_***
+Stage: N/A
+Email Mode: 2
+Has Attachment: True
+Attachment Mode: 1
+
+[2026-03-03 10:41:57] [INFO] [***_Prd] Stage: Sending_Email | Status: Success | Message: Email sent successfully via port *** (STARTTLS).
+********************************************************************************************************************************************************************************************************
