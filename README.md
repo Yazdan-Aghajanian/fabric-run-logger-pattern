@@ -45,3 +45,13 @@ This public repository provides:
 - example usage
 
 The goal is to share the implementation approach without exposing environment-specific production code.
+
+## Documentation
+
+- [Architecture Overview](docs/architecture_overview.md)
+- [Logging Conventions](docs/logging_conventions.md)
+- [Log Modes](docs/log_modes.md)
+- [System_Run_Log Schema](docs/system_run_log_schema.md)
+- [Integration Guide](docs/integration_guide.md)
+- [Security and Redaction](docs/security_redaction.md)
+- [Public Interface Design](docs/public_interface_design.md)
