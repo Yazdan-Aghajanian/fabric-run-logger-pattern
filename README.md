@@ -33,3 +33,15 @@ Fabric’s default logs are great for internal execution details, but for operat
 - Environment-specific paths/names
 - Full code implementation
 - Any organisation-specific logic, identifiers, or secrets
+
+## Implementation
+
+The full implementation of the Fabric Run Logger framework is maintained in a private repository.
+
+This public repository provides:
+- architecture
+- design patterns
+- logging conventions
+- example usage
+
+The goal is to share the implementation approach without exposing environment-specific production code.
