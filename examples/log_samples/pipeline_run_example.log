@@ -1,0 +1,350 @@
+********************************************************************************************************************************************************************************************************
+[2026-03-05 23:02:36] [INFO] [**_Prd] Stage: PL_Brz_***_Lander | Status: Started | Message: [PL_Brz_***_Lander] started at 2026-03-05 23:01:55
+
+Workspace Name: [***_Prd]
+Pipeline Name: [PL_Brz_***_Lander]
+Pipeline Run ID: [***-***-***-***-***]
+Pipeline Trigger ID: [***-***-***-***-***]
+Pipeline Trigger Origin ID: [***]
+Pipeline Trigger Tracking ID: [***-***-***-***-***]
+Pipeline Trigger Time: [(2026-03-05 23:01:55)]
+Pipeline Trigger Type: [Orchestrator Pipeline]
+Pipeline Trigger By: [PL_Brz_Orc_***_And_***]
+Pipeline Trigger Status: [Succeeded]
+
+========================================================================================================================================================================================================
+[2026-03-05 23:05:04] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:04:23
+- Copy Duration: 14 seconds
+- Data Read: 94506390 bytes
+- Data Written: 709173 bytes
+- Throughput: 10500.71 MB/s
+- Rows Copied: 95461
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+[2026-03-05 23:05:04] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:04:28
+- Copy Duration: 9 seconds
+- Data Read: 13134724 bytes
+- Data Written: 1459179 bytes
+- Throughput: 3283.681 MB/s
+- Rows Copied: 10441
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+[2026-03-05 23:05:38] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:04:19
+- Copy Duration: 51 seconds
+- Data Read: 365760800 bytes
+- Data Written: 9219984 bytes
+- Throughput: 7782.145 MB/s
+- Rows Copied: 149021
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+[2026-03-05 23:05:39] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:04:21
+- Copy Duration: 52 seconds
+- Data Read: 197739810 bytes
+- Data Written: 8926754 bytes
+- Throughput: 4119.58 MB/s
+- Rows Copied: 420723
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+[2026-03-05 23:06:39] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:04:21
+- Copy Duration: 115 seconds
+- Data Read: 552721546 bytes
+- Data Written: 21294847 bytes
+- Throughput: 6909.02 MB/s
+- Rows Copied: 997699
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+========================================================================================================================================================================================================
+[2026-03-05 23:09:46] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-05 23:09:48] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-05 23:09:49] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-05 23:09:53] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:09:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:09:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:10:43] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 1/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.***_LATEST_LANDED_DT], waiting 1s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772714432627,"operation":"UPDATE","operationParameters":{"predicate":["((((workspace_name#971 = ***_Prd) AND (lakehouse_name#972 = LH_Brz_***)) AND (source_system#973 = ***)) AND ((table_name#974 = ***) AND (pipeline_name#977 = PL_Brz_***_Lander)))"]},"readVersion":3268,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"5998","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"19854","numDeletionVectorsUpdated":"0","scanTimeMs":"17615","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6016","rewriteTimeMs":"2238"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"628752d7-403e-4a74-a920-f357bac8941f"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-05 23:10:47] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-05 23:10:51] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-05 23:10:44] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 1/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.***_LATEST_LANDED_DT], waiting 2s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772714432627,"operation":"UPDATE","operationParameters":{"predicate":["((((workspace_name#971 = ***_Prd) AND (lakehouse_name#972 = LH_Brz_***)) AND (source_system#973 = ***)) AND ((table_name#974 = ***) AND (pipeline_name#977 = PL_Brz_***_Lander)))"]},"readVersion":3268,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"5998","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"19854","numDeletionVectorsUpdated":"0","scanTimeMs":"17615","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6016","rewriteTimeMs":"2238"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"628752d7-403e-4a74-a920-f357bac8941f"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+[2026-03-05 23:10:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:10:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+[2026-03-05 23:10:57] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:11:01] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-05 23:11:14] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 1/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.***_LATEST_LANDED_DT], waiting 4s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772714459285,"operation":"UPDATE","operationParameters":{"predicate":["((((workspace_name#5303 = ***_Prd) AND (lakehouse_name#5304 = LH_Brz_***)) AND (source_system#5305 = ***)) AND ((table_name#5306 = ***) AND (pipeline_name#5309 = PL_Brz_***_Lander)))"]},"readVersion":3269,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"5998","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"10696","numDeletionVectorsUpdated":"0","scanTimeMs":"7607","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6016","rewriteTimeMs":"3088"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"76eef301-ac16-4b4b-b427-3c7d868af1be"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+[2026-03-05 23:11:15] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 2/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.***_LATEST_LANDED_DT], waiting 3s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772714459285,"operation":"UPDATE","operationParameters":{"predicate":["((((workspace_name#5303 = ***_Prd) AND (lakehouse_name#5304 = LH_Brz_***)) AND (source_system#5305 = ***)) AND ((table_name#5306 = ***) AND (pipeline_name#5309 = PL_Brz_***_Lander)))"]},"readVersion":3269,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"5998","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"10696","numDeletionVectorsUpdated":"0","scanTimeMs":"7607","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6016","rewriteTimeMs":"3088"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"76eef301-ac16-4b4b-b427-3c7d868af1be"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+[2026-03-05 23:11:25] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+[2026-03-05 23:11:26] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+[2026-03-05 23:11:30] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Warning | Message: [Attempt 2/30] Concurrent update/protocol change detected for [***] into [LH_Brz_***.***_LATEST_LANDED_DT], waiting 4s before retry... , [DELTA_CONCURRENT_APPEND] ConcurrentAppendException: Files were added to the root of the table by a concurrent update. Please try the operation again.
+Conflicting commit: {"timestamp":1772714487445,"operation":"UPDATE","operationParameters":{"predicate":["((((workspace_name#11126 = ***_Prd) AND (lakehouse_name#11127 = LH_Brz_***)) AND (source_system#11128 = ***)) AND ((table_name#11129 = ***) AND (pipeline_name#11132 = PL_Brz_***_Lander)))"]},"readVersion":3271,"isolationLevel":"Serializable","isBlindAppend":false,"operationMetrics":{"numRemovedFiles":"1","numRemovedBytes":"5998","numCopiedRows":"0","numDeletionVectorsAdded":"0","numDeletionVectorsRemoved":"0","numAddedChangeFiles":"0","executionTimeMs":"5524","numDeletionVectorsUpdated":"0","scanTimeMs":"4693","numAddedFiles":"1","numUpdatedRows":"1","numAddedBytes":"6016","rewriteTimeMs":"831"},"tags":{"VORDER":"true"},"engineInfo":"Apache-Spark/3.5.5.5.4.20260211.1 Delta-Lake/3.2.1.20260209.3","txnId":"849d88a1-5763-4b6b-bb1d-59c0bd37b615"}
+Refer to https://docs.delta.io/latest/concurrency-control.html for more details.
+[2026-03-05 23:11:31] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+[2026-03-05 23:11:32] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-05 23:11:32] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+========================================================================================================================================================================================================
+[2026-03-05 23:11:36] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-05 23:11:44] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+[2026-03-05 23:11:49] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-05 23:17:32] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Succeeded | Message: Copy activity [***] has completed successfully.
+- Copy Status: Succeeded
+- Source Type: OracleV2Unbundle
+- Sink Type: Lakehouse
+- Start Time: 2026-03-05 23:12:26
+- Copy Duration: 128 seconds
+- Data Read: 1426481684 bytes
+- Data Written: 35731147 bytes
+- Throughput: 11411.8525 MB/s
+- Rows Copied: 653151
+- Used ParallelCopies: 1 
+- Verification Result: Verified 
+- Result: Successful 
+
+========================================================================================================================================================================================================
+[2026-03-05 23:21:36] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Started | Message: [NB_Brz_Update_Metadata] execution started.
+[2026-03-05 23:21:41] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: In Progress | Message: Copy activity succeeded for [***_***], Proceeding to update metadata using mode [1].
+[2026-03-05 23:22:12] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_parquet_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Unsynced] and mode = [1].
+[2026-03-05 23:22:15] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: [NB_Brz_Update_Metadata] execution completed successfully.
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-05 23:23:44] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: [NB_Brz_Lander] execution started.
+[2026-03-05 23:23:48] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Setting up datasets for source system: [***]
+[2026-03-05 23:23:51] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Datasets setup completed for source system: [***]
+[2026-03-05 23:23:57] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Processing source system: [LH_Brz_***.***]
+[2026-03-05 23:24:00] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:24:09] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:24:11] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:24:13] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:24:26] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:24:28] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:24:32] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:25:06] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [ABAN8]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 10441 records
+- Existing: 10439 records
+- Inserted: 2 records
+- Deleted: 0 records
+- Updated: 2 records
+- Total: 10441 records
+- Result: Successful
+
+[2026-03-05 23:25:14] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:25:17] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:25:19] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:25:22] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:25:24] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:25:26] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:25:34] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:25:36] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:25:39] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:26:11] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [GMAID]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 95461 records
+- Existing: 95461 records
+- Inserted: 0 records
+- Deleted: 0 records
+- Updated: 2 records
+- Total: 95461 records
+- Result: Successful
+
+[2026-03-05 23:26:19] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:26:22] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:26:24] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:26:27] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:26:29] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:26:31] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:26:40] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:26:41] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:26:45] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:28:30] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [IMITM]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 149021 records
+- Existing: 149016 records
+- Inserted: 5 records
+- Deleted: 0 records
+- Updated: 142157 records
+- Total: 149021 records
+- Result: Successful
+
+[2026-03-05 23:28:40] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:28:42] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:28:44] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:28:48] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:28:50] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:28:52] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:29:00] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:29:02] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:29:07] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:29:46] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [COITM, COMCU, COLOCN, COLOTN, COLEDG]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 420723 records
+- Existing: 420669 records
+- Inserted: 54 records
+- Deleted: 0 records
+- Updated: 8325 records
+- Total: 420723 records
+- Result: Successful
+
+[2026-03-05 23:29:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:29:56] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:29:57] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:30:00] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:30:02] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:30:04] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:30:11] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:30:13] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:30:16] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:32:46] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [BPITM, BPMCU, BPLOCN, BPLOTN, BPAN8, BPIGID, BPCGID, BPLOTG, BPFRMP, BPCRCD, BPUOM, BPEXDJ, BPUPMJ, BPTDAY]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 997699 records
+- Existing: 999187 records
+- Inserted: 83437 records
+- Deleted: 84925 records
+- Updated: 78 records
+- Total: 997699 records
+- Result: Successful
+
+[2026-03-05 23:32:54] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:32:55] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:32:58] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Loading data for table [LH_Brz_***.***_***]
+[2026-03-05 23:33:01] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Fetched latest parquet landed date for [LH_Brz_***.***_***]: 2026-03-05 23:03:12
+[2026-03-05 23:33:04] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully fetched latest landed Parquet files for [LH_Brz_***.***_***] from archive.
+[2026-03-05 23:33:06] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Starting saving Delta table [LH_Brz_***.***_***]
+[2026-03-05 23:33:13] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [In_Progress] and mode = [2].
+[2026-03-05 23:33:16] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Started | Message: Saving DataFrame as Delta table [LH_BRZ_***.***_***]
+[2026-03-05 23:33:20] [INFO] [***_Prd] Stage: Schema_Evolution_Check | Status: Completed | Message: [Schema Evolution] No missing columns detected for target table [LH_BRZ_***.***_***].
+[2026-03-05 23:35:19] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Table upsert completed successfully with the following details:(save_table_v4)[***_***]
+- Status: Succeeded
+- Lakehouse Name: LH_Brz_***
+- Table Name: ***_***
+- Key Columns: [SHDOCO, SHDCTO, SHKCOO]
+- Exclude Columns: []
+- Surrogate Option: not save
+- Hash Option: not save
+- Do Count Enabled: True
+- Incoming: 653151 records
+- Existing: 652667 records
+- Inserted: 564 records
+- Deleted: 80 records
+- Updated: 95 records
+- Total: 653151 records
+- Result: Successful
+
+[2026-03-05 23:35:28] [INFO] [***_Prd] Stage: NB_Brz_Update_Metadata | Status: Completed | Message: Successfully updated [latest_table_landed_dt_adl] = [2026-03-05 23:03:12] for [***] into [LH_Brz_***.***_LATEST_LANDED_DT] with status = [Synced] and mode = [2].
+[2026-03-05 23:35:30] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Successfully saved Delta table [LH_Brz_***.***_***].
+[2026-03-05 23:35:32] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: Completed processing for source system: [LH_Brz_***.***].
+[2026-03-05 23:35:35] [INFO] [***_Prd] Stage: NB_Brz_Lander | Status: Completed | Message: [NB_Brz_Lander] execution completed successfully.
+========================================================================================================================================================================================================
+[2026-03-05 23:36:45] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Success | Message: Extracting log data for email dispatch.
+[2026-03-05 23:38:13] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Success | Message: System run log successfully updated in System_Run_Log table with the following fields:
+
+Run ID: [e3c392f0-35cf-4992-b6cd-dad5703b660d]
+Workspace Name: [***_Prd]
+Object Type: [Pipeline]
+Object Name: [PL_Brz_***_Lander]
+Object Subtype: [Lakehouse Lander]
+Start Time: [(2026-03-05 23:01:55)]
+End Time: [(2026-03-05 23:38:35)]
+Duration: [00:36:40]
+Status: [Success]
+Result Message: [Pipeline completed successfully.]
+Trigger Type: [Orchestrator Pipeline]
+Triggered By: [PL_Brz_Orc_***_And_***]
+Log Date: [(2026-03-05 23:37:35)]
+Log Day: [2026-03-05]
+Additional Metadata: [map()]
+Tags: [array('pipeline', 'success')]
+Description: []
+
+========================================================================================================================================================================================================
+========================================================================================================================================================================================================
+[2026-03-05 23:38:19] [INFO] [***_Prd] Stage: PL_Brz_***_Lander | Status: Finished | Message: [PL_Brz_***_Lander] finished successfully at 2026-03-05 23:38:35
+========================================================================================================================================================================================================
+[2026-03-05 23:39:53] [INFO] [***_Prd] Stage: Sending_Email | Status: Success | Message: Extract Email Configuration:
+
+Workspace: ***_Prd
+Module: PL_Brz_***_Lander
+Stage: N/A
+Email Mode: 1
+Has Attachment: True
+Attachment Mode: 1
+
+[2026-03-05 23:39:56] [INFO] [***_Prd] Stage: Sending_Email | Status: Success | Message: Email sent successfully via port *** (STARTTLS).
+********************************************************************************************************************************************************************************************************
