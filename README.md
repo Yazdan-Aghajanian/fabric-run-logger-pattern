@@ -1,11 +1,17 @@
 
 # Fabric Run Logger (Public Pattern)
 
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft-Fabric-blue)
+![Architecture Pattern](https://img.shields.io/badge/Type-Architecture%20Pattern-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 A reference architecture for building **high‑level, end‑to‑end run observability** in **Microsoft Fabric pipelines and notebooks**.
 
 The Fabric Run Logger pattern focuses on **business‑level execution visibility**, complementing Fabric’s internal execution logs.
 
 Instead of only seeing low‑level engine activity, this pattern provides a clear **A‑to‑Z narrative of every pipeline or notebook run**.
+
+---
 
 This public repository shares:
 
@@ -63,6 +69,44 @@ Logs are typically stored by:
 - pipeline or notebook name
 - execution date
 - run identifier
+
+---
+
+# High‑Level Architecture
+
+```mermaid
+flowchart TD
+
+A[Pipeline or Notebook Run] --> B[Initialise Logger Context]
+B --> C[Write Run Start Log]
+C --> D[Log Each Processing Stage]
+
+D --> E[Read Source]
+D --> F[Transform Data]
+D --> G[Validate Data]
+D --> H[Write to Delta]
+
+H --> I[Capture Success or Failure]
+
+I --> J[Write Final Run Status]
+
+J --> K[Persist Structured Metadata]
+K --> L[System_Run_Log Delta Table]
+
+J --> M[Detailed Run Logs]
+M --> N[OneLake File Storage]
+
+N --> O[Run Investigation / Reporting]
+L --> O
+```
+
+This architecture separates:
+
+| Layer | Purpose |
+|------|------|
+| File Logs | Detailed execution narrative |
+| Structured Table | Queryable run metadata |
+| Analysis Layer | Investigation and reporting |
 
 ---
 
