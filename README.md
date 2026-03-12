@@ -214,16 +214,16 @@ Detailed documentation is available in the `docs/` folder.
 
 ---
 
-
 # Examples
 
 Practical examples of how the Fabric Run Logger pattern is used in notebooks and pipelines.
 
 ## Example code
 
+- [Python logger interface](examples/logger_interface.py)
 - [Notebook pseudocode example](examples/pseudocode_notebook.md)
 
-This example demonstrates the typical integration pattern:
+These examples demonstrate the typical integration pattern:
 
 - Initialising a run context  
 - Logging stages during execution  
