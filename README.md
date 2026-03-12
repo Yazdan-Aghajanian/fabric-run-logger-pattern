@@ -160,6 +160,7 @@ fabric-run-logger-pattern
 │   └── system_run_log_schema.md
 │
 ├── examples
+│   ├── logger_interface.py
 │   └── pseudocode_notebook.md
 │
 ├── README.md
