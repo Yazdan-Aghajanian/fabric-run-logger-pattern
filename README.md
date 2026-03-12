@@ -161,6 +161,7 @@ fabric-run-logger-pattern
 │
 ├── examples
 │   ├── logger_interface.py
+│   ├── example_pipeline_usage.py
 │   └── pseudocode_notebook.md
 │
 ├── README.md
@@ -221,6 +222,7 @@ Practical examples of how the Fabric Run Logger pattern is used in notebooks and
 ## Example code
 
 - [Python logger interface](examples/logger_interface.py)
+- [Python pipeline usage example](examples/example_pipeline_usage.py)
 - [Notebook pseudocode example](examples/pseudocode_notebook.md)
 
 These examples demonstrate the typical integration pattern:
