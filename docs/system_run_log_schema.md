@@ -84,7 +84,7 @@ Example run entry:
 RUN_ID: 43c7d6f2
 WORKSPACE_NAME: <WORKSPACE_NAME>
 OBJECT_TYPE: Pipeline
-OBJECT_NAME: PL_Brz_Opt_Lander
+OBJECT_NAME: PL_Brz_***_Lander
 OBJECT_SUBTYPE: Bronze
 STATUS: Succeeded
 TRIGGER_TYPE: Schedule
@@ -130,7 +130,7 @@ Examples:
   "records_inserted": 145,
   "records_updated": 32,
   "copy_duration": 14.3,
-  "source_system": "Optomate"
+  "source_system": "***"
 }
 ```
 
