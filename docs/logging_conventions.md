@@ -19,7 +19,7 @@ Each log entry follows a consistent structure:
 Example:
 
 ```
-[2026-03-10 14:22:11] [INFO] [NP-Fabric-Prod] Stage: Upsert | Status: Completed | Message: Inserted=145 Updated=32
+[2026-03-10 14:22:11] [INFO] [***-Fabric-Prod] Stage: Upsert | Status: Completed | Message: Inserted=145 Updated=32
 ```
 
 This format ensures that logs remain:
